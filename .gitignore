@@ -23,6 +23,10 @@
 .idea/
 target/
 *.iml
+Lesson1/
+Lesson2/
+Lesson3/
+
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
