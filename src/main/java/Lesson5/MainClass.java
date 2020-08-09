@@ -33,9 +33,11 @@ public class  MainClass {
             }
         }
 
+        System.out.println("ПОБЕДИТЕЛЕМ ГОНКИ СТАНОВИТЬСЯ >>>> " +  Car.getFirstCar());
+
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!");
 
-        System.out.println("ПОБЕДИТЕЛЕМ ГОНКИ СТАНОВИТЬСЯ >>>> " +  Car.getFirstCar());
+
     }
 }
 
