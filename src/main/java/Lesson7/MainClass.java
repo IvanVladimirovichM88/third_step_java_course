@@ -1,5 +1,9 @@
 package Lesson7;
 
+import Lesson7.Anatations.MarkingTest;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class MainClass {
@@ -8,23 +12,42 @@ public class MainClass {
     public static void main(String[] args) throws Exception {
 
         // проверка заполнения массива
-        printFillArray(4,4);
-        System.out.println("-------------------------------");
-        printFillArray(5,5);
-        System.out.println("-------------------------------");
-        printFillArray(4,8);
-        System.out.println("-------------------------------");
-        printFillArray(8,4);
-        System.out.println("-------------------------------");
-        printFillArray(3,9);
-        System.out.println("-------------------------------");
-        printFillArray(9,3);
-        System.out.println("-------------------------------");
-        printFillArray(3,8);
-        System.out.println("-------------------------------");
-        printFillArray(4,9);
-        System.out.println("-------------------------------");
+//        printFillArray(4,4);
+//        System.out.println("-------------------------------");
+//        printFillArray(5,5);
+//        System.out.println("-------------------------------");
+//        printFillArray(4,8);
+//        System.out.println("-------------------------------");
+//        printFillArray(8,4);
+//        System.out.println("-------------------------------");
+//        printFillArray(3,9);
+//        System.out.println("-------------------------------");
+//        printFillArray(9,3);
+//        System.out.println("-------------------------------");
+//        printFillArray(3,8);
+//        System.out.println("-------------------------------");
+//        printFillArray(4,9);
+//        System.out.println("-------------------------------");
 
+
+        Class  classCat = Cat.class;
+        TestingClass.star(classCat);
+
+
+
+//        Class myClass = Cat.class;
+//        Field[] fields = myClass.getDeclaredFields();
+//        Method[] methods = myClass.getDeclaredMethods();
+//        for(Field o: fields){
+//            System.out.println("Type and name:  " + o.getType().getName() + "  "+ o.getName());
+//        }
+//
+//        for (Method m :
+//                methods) {
+//            if ( m.getAnnotation(MarkingTest.class) != null )
+//            System.out.println(m.getReturnType() + " || " +
+//                    m.getName() + " || " + Arrays.toString(m.getParameterTypes()));
+//        }
     }
 
     static void printFillArray( int width, int height){
